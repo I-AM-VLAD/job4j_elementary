@@ -1,4 +1,4 @@
-package ru.job4j.chapter_1.variables;
+package ru.job4j.chapter1.variables;
 
 public class ArgumentsMethod {
 
