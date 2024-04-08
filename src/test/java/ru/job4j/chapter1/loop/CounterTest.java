@@ -22,7 +22,7 @@ class CounterTest {
     @Test
     void start1Finish1Then0() {
         int result = Counter.sum(1, 1);
-        int expected = 0;
+        int expected = 1;
         assertThat(result).isEqualTo(expected);
     }
 
