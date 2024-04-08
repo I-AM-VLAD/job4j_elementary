@@ -6,10 +6,7 @@ public class Factorial {
         if (number < 0) {
             throw new IllegalArgumentException("Отрицательный аргумент");
         }
-        for (int i = 1; i <= number; i++) {
-            if (number == 0 || number == 1) {
-                break;
-            }
+        for (int i = 2; i <= number; i++) {
             result = result * i;
         }
         return result;
