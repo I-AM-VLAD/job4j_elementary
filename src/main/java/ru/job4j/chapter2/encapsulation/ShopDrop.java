@@ -6,7 +6,7 @@ public class ShopDrop {
             throw new IllegalArgumentException();
         }
         for (int i = index; i < products.length; i++) {
-            if(i + 1 < products.length) {
+            if (i + 1 < products.length) {
                 products[i] = products[i + 1];
             }
         }
