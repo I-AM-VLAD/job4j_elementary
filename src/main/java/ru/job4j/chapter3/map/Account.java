@@ -2,8 +2,19 @@ package ru.job4j.chapter3.map;
 
 import java.util.Objects;
 
+/**
+ * Модель данных Account
+ * @author VLAD CHUPRYNA
+ * @version 1.0
+ */
 public class Account {
+    /**
+     * Поле реквизиты
+     */
     private String requisite;
+    /**
+     * Поле баланс
+     */
     private double balance;
 
     public Account(String requisite, double balance) {

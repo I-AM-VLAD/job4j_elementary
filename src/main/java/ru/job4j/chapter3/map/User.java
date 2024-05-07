@@ -2,8 +2,19 @@ package ru.job4j.chapter3.map;
 
 import java.util.Objects;
 
+/**
+ * Модель данных User
+ * @author VLAD CHUPRYNA
+ * @version 1.0
+ */
 public class User {
+    /**
+     * Поле паспорт
+     */
     private String passport;
+    /**
+     * Поле имя пользоватнля
+     */
     private String username;
 
     public User(String passport, String username) {
