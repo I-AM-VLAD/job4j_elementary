@@ -10,6 +10,7 @@ public class StringCompare implements Comparator<String> {
             int compare = Character.compare(left.charAt(i), right.charAt(i));
             if (compare != 0) {
                 result = compare;
+                break;
             }
         }
         if (result == 0) {
