@@ -32,7 +32,7 @@ public class BankService {
      * @param passport для поиска user, для удаления
      */
     public void deleteUser(String passport) {
-        users.remove(findByPassport(passport));
+        users.remove(new User(passport, ""));
     }
 
     /**
@@ -80,7 +80,7 @@ public class BankService {
     public Account findByRequisite(String passport, String requisite) {
         Account result = null;
         User user = findByPassport(passport);
-        if (users.get(user) != null) {
+        if (user != null) {
             for (Account element : users.get(user)) {
                 if (element.getRequisite().equals(requisite)) {
                     result = element;
