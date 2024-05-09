@@ -21,8 +21,8 @@ public class Profiles {
                 return left.getCity().compareTo(right.getCity());
             }
         };
-        addresses.sort(comparator);
         return addresses.stream()
+                .sorted(comparator)
                 .distinct()
                 .collect(Collectors.toList());
     }
