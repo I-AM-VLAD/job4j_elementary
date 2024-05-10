@@ -15,14 +15,8 @@ public class Profiles {
 
     public static List<Address> collectSortWithoutDuplicate(List<Profile> profiles) {
         List<Address> addresses = collect(profiles);
-        Comparator<Address> comparator =  new Comparator<Address>() {
-            @Override
-            public int compare(Address left, Address right) {
-                return left.getCity().compareTo(right.getCity());
-            }
-        };
         return addresses.stream()
-                .sorted(comparator)
+                .sorted(Comparator.comparing(Address::getCity))
                 .distinct()
                 .collect(Collectors.toList());
     }
